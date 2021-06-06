@@ -2,7 +2,7 @@ import React from 'react'
 import Gifs from '../Gifs/Gifs'
 import 'assets/css/List.css'
 
-function ListaDeGifs({gifs}){
+export default function ListaDeGifs({gifs}){
         return <div className="List">
         {
             gifs.map(({id,title,url}) => 
@@ -16,7 +16,3 @@ function ListaDeGifs({gifs}){
         }
     </div>
 }
-
-export default React.memo(ListaDeGifs, (prevProps, nextProps) => {
-    return prevProps.id === nextProps.id
-})

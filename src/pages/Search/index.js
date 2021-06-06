@@ -14,7 +14,7 @@ export default function Resultados( {params} ){
     if(page < 0){
         setPage(0)
     }
-
+    console.log(page)
     return <>
         {
         loading ? <span>Cargando...</span> : 
@@ -23,7 +23,7 @@ export default function Resultados( {params} ){
             <ListaDeGifs gifs={gifs}/>
         </>
         }
-        <div>
+        <div className="container-buttons">
             <button id="prevPage" onClick={handlePrevPage}>Prev Page</button>
             <button id="startPage" onClick={handleStartPage}>Inicio</button>
             <button id="nextPage" onClick={handleNextPage}>Next Page</button>

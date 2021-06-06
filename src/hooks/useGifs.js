@@ -19,12 +19,11 @@ export default function useGifs ( { keyword } = { keyword : ''} ){
             setLoading(false)
             localStorage.setItem('lastSearchKeyword', keyword)
         })
-    }, [keyword, keywordToUse, setGifs]) 
+    }, [keyword, keywordToUse]) 
 
     //Get next or prev page gifs
     useEffect(() => {
         if(page < INITIAL_PAGE) return
-
         setLoadingNextPage(true)
         getGifs( { keyword: keywordToUse, page } )
         .then(nextGifs => {

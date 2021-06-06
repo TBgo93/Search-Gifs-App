@@ -24,6 +24,10 @@ div.OneGifs > h5 {
     left: 5px;
     top: 5px;
 }
+div.container-buttons{
+    display: flex;
+    flex-direction: row;
+}
 button#prevPage, button#nextPage, button#startPage{
     padding: 8px 16px;
     border-radius: 12px;
