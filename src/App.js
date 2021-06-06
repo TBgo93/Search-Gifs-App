@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import './assets/css/App.css';
+import Home from './pages/Home/index';
+import Resultados from './pages/Search/index';
+import Detail from './pages/Detail/index'
+import Top10Gifs from './pages/Top10Gifs/index'
+import { Route } from 'wouter'
+import NavMenu from 'components/NavMenu/NavMenu';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <NavMenu />
+      <section className="App">
+        <div className="AppContent">
+            <Route component={Home} path="/"/>
+            <Route component={Top10Gifs} path="/top10gifs"/>
+            <Route component={Resultados} path="/search/:keyword"/>
+            <Route component={Detail} path="/gifs/:id"/>
+        </div>
+      </section>
+    </>
   );
 }
 

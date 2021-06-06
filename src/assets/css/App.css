@@ -1,0 +1,25 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+  z-index: 1;
+}
+
+.AppContent{
+  background-image: linear-gradient(136deg, #576a7d, #d2c7a1);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.Logo{
+  cursor: pointer;
+  width: 22vh
+}

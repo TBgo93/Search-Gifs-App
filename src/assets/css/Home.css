@@ -1,0 +1,31 @@
+form{
+    margin: 10px;
+}
+form > input{
+    padding: 6px 12px;
+    border: 1px solid #000;
+    border-radius: 20px 0 0 20px;
+}
+form > button {
+    padding: 6px 12px;
+    border: 1px solid #000;
+    border-left: none;
+    border-radius: 0 20px 20px 0;
+    background-color: cadetblue;
+    transition: 0.3s ease-in-out;
+}
+
+form > button:hover{
+    background-color: rgb(31, 112, 112);
+    transition: 0.6s ease-in-out;
+}
+h4{
+    margin-bottom: 12px;
+}
+a.link{
+    text-decoration: none;
+    color: #001269;
+}
+a.link:hover{
+    color: #293ea5;
+}

@@ -1,0 +1,63 @@
+:root{
+    --columnas-resultados : 2;
+}
+
+.List{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 8px 16px;
+    width: 100%;
+    justify-items: center;
+}
+
+.OneGifs {
+    display: inline-block;
+    width: max-content;
+    position: relative;
+}
+
+div.OneGifs > h5 {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 12px;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+button#prevPage, button#nextPage, button#startPage{
+    padding: 8px 16px;
+    border-radius: 12px;
+    border: none;
+    font-size: 14px;
+    margin: 25px;
+    box-shadow: 3px 3px 10px #333;
+}
+button#prevPage:hover, button#nextPage:hover, button#startPage:hover{
+    background-color: #777;
+    transition: .4s ease-in-out;
+}
+h3#title{
+    margin: 50px 0;
+}
+.disabled{
+    cursor: not-allowed;
+}
+@media (min-width: 600px) {
+    :root{
+        --columnas-resultados : 3;
+    }
+}
+
+@media (min-width: 800px) {
+    :root{
+        --columnas-resultados : 4;
+    }
+}
+@media (max-width: 360px){
+    div.OneGifs > a > img {
+        width: 90%;
+    }
+    div.OneGifs > h5{
+        font-size: 8px;
+    }
+}

@@ -1,0 +1,22 @@
+h5#title-suggestions{
+    margin-top: 15px;
+    color: #080808
+}
+ul.ListSuggestions{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    margin: 10px 5px;
+}
+ul.ListSuggestions > li {
+    margin: 5px 10px;
+}
+ul.ListSuggestions > li > a{
+    text-decoration: none;
+    color: #001269;
+    font-size: 14px;
+}
+ul.ListSuggestions > li > a:hover{
+    color: #293ea5;
+}

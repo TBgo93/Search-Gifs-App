@@ -1,0 +1,9 @@
+h2{
+    padding: 5px;
+    margin-top: 25px;
+}
+hr{
+    width: 50%;
+    border: 1px solid #000;
+    margin: 25px 0;
+}
